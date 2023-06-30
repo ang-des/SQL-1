@@ -73,7 +73,7 @@ ORDER BY name;
 
 <br>
 
-9. Write a query that returns a new field called name_date that combines the name and date fields with the labels 'name:' and 'date:'. Your first row should look like this: name: Harrison Jonson; date: 2011-03-16
+9. Write a query that returns a new field called name_date that combines the name and date fields with the labels 'name:' and 'date:'.
 ``
 SELECT CONCAT('name: ', name, '; date: ', DATE(created_at)) AS name_date
 FROM purchases;
