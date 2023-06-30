@@ -1,11 +1,13 @@
 # SQL-1 Queries
 
+<br>
 
-1. Write a query that returns the count for all records in the purchases table
+1. Write a query that returns the count for all records in the purchases table.
 ```
 SELECT COUNT(*)
 FROM purchases
 ```
+
 <br>
 
 2. Write a query that returns the count of records for the months after May. Store this in an alias named num_after_may
@@ -73,7 +75,7 @@ ORDER BY name;
 
 <br>
 
-9. Write a query that returns a new field called name_date that combines the name and date fields with the labels 'name:' and 'date:'.
+9. Write a query that returns a new field called name_date that combines the name and date fields with the labels (name:) and (date:).
 ```
 SELECT CONCAT('name: ', name, '; date: ', DATE(created_at)) AS name_date
 FROM purchases;
